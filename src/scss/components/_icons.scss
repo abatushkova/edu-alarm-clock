@@ -1,0 +1,12 @@
+.icon {
+  fill: currentColor;
+  font-size: 8rem;
+
+  &__body {
+    display: block;
+    width: 1em;
+    height: 1em;
+    transform: translateX(0);
+    background: inherit;
+  }
+}

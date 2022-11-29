@@ -107,6 +107,19 @@ a {
   outline: 0;
 }
 
+.icon {
+  fill: currentColor;
+  font-size: 8rem;
+}
+.icon__body {
+  display: block;
+  width: 1em;
+  height: 1em;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background: inherit;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,8 +136,6 @@ a {
           justify-content: center;
   height: 100%;
   padding: 0 10px;
-  background-color: #d0e4c3;
-  text-align: center;
 }
 
 .clock {
@@ -135,30 +146,24 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   padding: 28px;
   border-radius: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #fff;
+  background-color: #e5eadc;
+  text-align: center;
+}
+.clock__icon {
+  display: block;
+  margin: 0 auto 30px;
+  color: #376a20;
 }
 .clock__title {
   margin-bottom: 30px;
-  font: 700 2.4rem/3.2rem a;
+  font: 700 3.2rem/4rem a;
   font-family: inherit;
-}
-@media only screen and (min-width: 769px) {
-  .clock__title {
-    font-size: 2.8rem;
-    line-height: 3.6rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .clock__title {
-    font-size: 3.2rem;
-    line-height: 4rem;
-  }
 }
 .clock__grid {
   display: -webkit-box;
@@ -167,12 +172,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font: italic 1.6rem/2.4rem a;
-  font-family: inherit;
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .clock__ui {
-  width: calc(33.3333333333% - 10px);
+  width: calc(33.3333333333% - 4px);
   height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -182,27 +185,14 @@ a {
 }
 .clock__ui-select {
   padding: 0 16px;
-  border: 1px solid #ccc;
-}
-.clock__ui-select::-webkit-input-placeholder {
-  color: #ccc;
-}
-.clock__ui-select::-moz-placeholder {
-  color: #ccc;
-}
-.clock__ui-select:-ms-input-placeholder {
-  color: #ccc;
-}
-.clock__ui-select::-ms-input-placeholder {
-  color: #ccc;
-}
-.clock__ui-select::placeholder {
-  color: #ccc;
+  background-color: #fff;
+  color: inherit;
 }
 .clock__ui-select:focus {
-  border-color: #111;
+  background-color: #b8f298;
 }
 .clock__ui-button {
+  width: 100%;
   padding: 0 24px;
   background-color: #376a20;
   color: #fff;
@@ -219,4 +209,26 @@ a {
 }
 .clock__ui-button--red:focus, .clock__ui-button--red:hover {
   background-color: #dc362e;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
 }

@@ -7,45 +7,39 @@
   justify-content: center;
   height: 100%;
   padding: 0 10px;
-  background-color: $primary;
-  text-align: center;
 }
 
 .clock {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   padding: 28px;
   border-radius: 16px;
   box-sizing: border-box;
-  background-color: $white;
+  background-color: $primary;
+  text-align: center;
+
+  &__icon {
+    display: block;
+    margin: 0 auto 30px;
+    color: $green;
+  }
 
   &__title {
     margin-bottom: 30px;
-    font: 700 2.4rem/3.2rem a;
+    font: 700 3.2rem/4rem a;
     font-family: inherit;
-
-    @include tablet {
-      font-size: 2.8rem;
-      line-height: 3.6rem;
-    }
-    @include desktop {
-      font-size: 3.2rem;
-      line-height: 4rem;
-    }
   }
 
   &__grid {
     display: flex;
     justify-content: space-between;
-    font: italic 1.6rem/2.4rem a;
-    font-family: inherit;
-    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   &__ui {
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3 - 4px);
     height: 50px;
     box-sizing: border-box;
     border-radius: 4px;
@@ -55,16 +49,15 @@
 
   &__ui-select {
     padding: 0 16px;
-    border: 1px solid $gray-c;
-    &::placeholder {
-      color: $gray-c;
-    }
+    background-color: #fff;
+    color: inherit;
     &:focus {
-      border-color: $gray-1;
+      background-color: $lime;
     }
   }
 
   &__ui-button {
+    width: 100%;
     padding: 0 24px;
     background-color: $green;
     color: $white;
@@ -83,5 +76,14 @@
     &:hover {
       background-color: $red-light;
     }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
   }
 }

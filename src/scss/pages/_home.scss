@@ -1,0 +1,87 @@
+@use '../abstracts' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+  background-color: $primary;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 28px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: 30px;
+    font: 700 2.4rem/3.2rem a;
+    font-family: inherit;
+
+    @include tablet {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+    @include desktop {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    font: italic 1.6rem/2.4rem a;
+    font-family: inherit;
+    margin-top: 16px;
+  }
+
+  &__ui {
+    width: calc(100% / 3 - 10px);
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: 1.6rem/2.4rem a;
+    font-family: inherit;
+  }
+
+  &__ui-select {
+    padding: 0 16px;
+    border: 1px solid $gray-c;
+    &::placeholder {
+      color: $gray-c;
+    }
+    &:focus {
+      border-color: $gray-1;
+    }
+  }
+
+  &__ui-button {
+    padding: 0 24px;
+    background-color: $green;
+    color: $white;
+    font-weight: 500;
+    transition: background-color 300ms cubic-bezier(0.2, 0, 0, 1);
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+
+  &__ui-button--red {
+    background-color: $red;
+    &:focus,
+    &:hover {
+      background-color: $red-light;
+    }
+  }
+}

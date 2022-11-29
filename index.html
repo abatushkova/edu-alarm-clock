@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="clock">
+      <img src="#" alt="Clock icon" class="clock__icon">
+      <h1 class="clock__title">04:20:20 PM</h1>
+      <div class="clock__content">
+        <div class="clock__grid">
+          <select name="hours" id="selectHour" class="clock__ui clock__ui-select">
+            <option value="Hour" selected hidden>Hour</option>
+          </select>
+          <select name="minutes" id="selectMinute" class="clock__ui clock__ui-select">
+            <option value="Minute" selected hidden>Minute</option>
+          </select>
+          <select name="time" id="selectTime" class="clock__ui clock__ui-select">
+            <option value="AM/PM" selected hidden>AM/PM</option>
+          </select>
+        </div>
+        <button type="button" id="alarmButton" class="clock__ui clock__ui-button">Set Alarm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>

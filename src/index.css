@@ -1,0 +1,222 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  overflow-x: hidden;
+  font-family: "Roboto", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  overflow-wrap: break-word;
+}
+
+ul,
+ol,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+audio,
+canvas,
+iframe,
+picture,
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+select {
+  width: 100%;
+  background-color: transparent;
+  line-height: inherit;
+  cursor: inherit;
+}
+select::-ms-expand {
+  display: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input,
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+  background-color: #d0e4c3;
+  text-align: center;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 28px;
+  border-radius: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+.clock__title {
+  margin-bottom: 30px;
+  font: 700 2.4rem/3.2rem a;
+  font-family: inherit;
+}
+@media only screen and (min-width: 769px) {
+  .clock__title {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .clock__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+.clock__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: italic 1.6rem/2.4rem a;
+  font-family: inherit;
+  margin-top: 16px;
+}
+.clock__ui {
+  width: calc(33.3333333333% - 10px);
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font: 1.6rem/2.4rem a;
+  font-family: inherit;
+}
+.clock__ui-select {
+  padding: 0 16px;
+  border: 1px solid #ccc;
+}
+.clock__ui-select::-webkit-input-placeholder {
+  color: #ccc;
+}
+.clock__ui-select::-moz-placeholder {
+  color: #ccc;
+}
+.clock__ui-select:-ms-input-placeholder {
+  color: #ccc;
+}
+.clock__ui-select::-ms-input-placeholder {
+  color: #ccc;
+}
+.clock__ui-select::placeholder {
+  color: #ccc;
+}
+.clock__ui-select:focus {
+  border-color: #111;
+}
+.clock__ui-button {
+  padding: 0 24px;
+  background-color: #376a20;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: background-color 300ms cubic-bezier(0.2, 0, 0, 1);
+  transition: background-color 300ms cubic-bezier(0.2, 0, 0, 1);
+  cursor: pointer;
+}
+.clock__ui-button:focus, .clock__ui-button:hover {
+  background-color: #4a8d2a;
+}
+.clock__ui-button--red {
+  background-color: #b3261e;
+}
+.clock__ui-button--red:focus, .clock__ui-button--red:hover {
+  background-color: #dc362e;
+}

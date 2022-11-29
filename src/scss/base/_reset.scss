@@ -1,0 +1,108 @@
+@use '../abstracts' as *;
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: $white;
+  color: $gray-1;
+  overflow-x: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  overflow-wrap: break-word;
+}
+
+ul,
+ol,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+audio,
+canvas,
+iframe,
+picture,
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+select {
+  width: 100%;
+  background-color: transparent;
+  line-height: inherit;
+  cursor: inherit;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input,
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus:not(:focus-visible){
+  outline: 0;
+}

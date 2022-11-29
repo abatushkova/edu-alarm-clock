@@ -22,13 +22,13 @@
 
   &__icon {
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto 40px;
     color: $green;
   }
 
   &__title {
-    margin-bottom: 30px;
-    font: 700 3.2rem/4rem a;
+    margin-bottom: 40px;
+    font: 3.6rem/4.4rem a;
     font-family: inherit;
   }
 
@@ -76,6 +76,14 @@
     &:hover {
       background-color: $red-light;
     }
+  }
+
+  &__output {
+    margin-top: 16px;
+    color: $red;
+    font: 500 1.6rem/2.4rem a;
+    font-family: inherit;
+    text-align: center;
   }
 }
 

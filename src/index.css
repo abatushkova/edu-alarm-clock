@@ -125,6 +125,62 @@ a {
   display: none !important;
 }
 
+.error {
+  color: #b3261e;
+}
+
+.is-shaking {
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-animation: shake 0.6s linear infinite;
+          animation: shake 0.6s linear infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 .icon {
   fill: currentColor;
   font-size: 8rem;
@@ -190,7 +246,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 16px;
 }
 .clock__ui {
   width: calc(33.3333333333% - 4px);
@@ -206,12 +261,16 @@ a {
   background-color: #fff;
   color: inherit;
 }
+.clock__ui-select:disabled {
+  opacity: 0.38;
+}
 .clock__ui-select:focus {
   background-color: #b8f298;
 }
 .clock__ui-button {
   width: 100%;
   padding: 0 24px;
+  margin-top: 16px;
   background-color: #376a20;
   color: #fff;
   font-weight: 500;
@@ -230,30 +289,7 @@ a {
 }
 .clock__output {
   margin-top: 16px;
-  color: #b3261e;
   font: 500 1.6rem/2.4rem a;
   font-family: inherit;
   text-align: center;
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
 }

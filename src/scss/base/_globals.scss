@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,4 +15,31 @@
 
 .hide {
   display: none !important;
+}
+
+.error {
+  color: $red;
+}
+
+.is-shaking {
+  transform-origin: top center;
+  animation: shake .6s linear infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

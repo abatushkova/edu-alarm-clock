@@ -5,7 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alarm Clock</title>
-  <link rel="stylesheet" href="./src/index.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./src/favicons/site.webmanifest">
+  <link rel="icon" href="./src/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#e5eadc">
+  <meta name="msapplication-TileImage" content="./src/favicons/mstile-180x180.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./src/index.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -16,19 +26,20 @@
       <h1 id="title" class="clock__title"></h1>
       <div class="clock__content">
         <div class="clock__grid">
-          <select name="hours" id="selectHour" class="clock__ui clock__ui-select">
+          <select name="hour" id="selectHour" class="clock__ui clock__ui-select">
             <option value="Hour" selected hidden>Hour</option>
           </select>
-          <select name="minutes" id="selectMinute" class="clock__ui clock__ui-select">
+          <select name="minute" id="selectMinute" class="clock__ui clock__ui-select">
             <option value="Minute" selected hidden>Minute</option>
           </select>
-          <select name="time" id="selectTime" class="clock__ui clock__ui-select">
+          <select name="session" id="selectSession" class="clock__ui clock__ui-select">
             <option value="AM/PM" selected hidden>AM/PM</option>
           </select>
         </div>
         <button type="button" id="alarmButton" class="clock__ui clock__ui-button">Set Alarm</button>
+        <button type="button" id="stopButton" class="clock__ui clock__ui-button clock__ui-button--red hide">Stop Alarm</button>
       </div>
-      <p id="error" class="clock__output hide"></p>
+      <p id="output" class="clock__output hide"></p>
     </div>
   </div>
 

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.day {
+  background-color: $white;
+  background-image: linear-gradient(to bottom, #215FC5 2%, #3E81D0 7%, #b2ceda 20%, #fbfae8 30%, #fdfdda 60%, #f3eda1 90%, #e8dc7d 92%);
+}
+
+.night {
+  background-color: $gray-1;
+  background-image: linear-gradient(to bottom, #020c1d 35%, #001830 50%, #01304a 74%, #6c6155 90%, #d1872a 96%, #b04708 97%, #040712 98%);
+}

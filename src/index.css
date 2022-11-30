@@ -232,7 +232,7 @@ a {
 .clock__icon {
   display: block;
   margin: 0 auto 40px;
-  color: #376a20;
+  color: #4a8d2a;
 }
 .clock__title {
   margin-bottom: 40px;
@@ -292,4 +292,16 @@ a {
   font: 500 1.6rem/2.4rem a;
   font-family: inherit;
   text-align: center;
+}
+
+.day {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #215FC5), color-stop(7%, #3E81D0), color-stop(20%, #b2ceda), color-stop(30%, #fbfae8), color-stop(60%, #fdfdda), color-stop(90%, #f3eda1), color-stop(92%, #e8dc7d));
+  background-image: linear-gradient(to bottom, #215FC5 2%, #3E81D0 7%, #b2ceda 20%, #fbfae8 30%, #fdfdda 60%, #f3eda1 90%, #e8dc7d 92%);
+}
+
+.night {
+  background-color: #111;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #020c1d), color-stop(50%, #001830), color-stop(74%, #01304a), color-stop(90%, #6c6155), color-stop(96%, #d1872a), color-stop(97%, #b04708), color-stop(98%, #040712));
+  background-image: linear-gradient(to bottom, #020c1d 35%, #001830 50%, #01304a 74%, #6c6155 90%, #d1872a 96%, #b04708 97%, #040712 98%);
 }

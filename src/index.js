@@ -109,10 +109,10 @@ const stopAlarm = () => {
   stopBtn.classList.add('hide');
 };
 
-const setWrapperBg = () => {
+const setWrapperTheme = () => {
   const currentHour = new Date().getHours();
 
-  if (6 <= currentHour && currentHour <= 18) {
+  if (6 <= currentHour && currentHour < 18) {
     wrapper.classList.replace('night', 'day');
   } else {
     wrapper.classList.replace('day', 'night');
@@ -124,4 +124,4 @@ stopBtn.addEventListener('click', stopAlarm);
 
 calculateTime();
 setSelectOptions();
-setWrapperBg();
+setWrapperTheme();
